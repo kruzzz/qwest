@@ -24,6 +24,12 @@ var btn_main_question_2 = document.getElementById('button-main-question-2');
 var ans_to_main_question_2 = document.getElementById('answer-to-main-question-2');
 var answer_2 = document.getElementById('answer-2');
 
+var task_3 = document.getElementById('task-3');
+
+var btn_main_question_3 = document.getElementById('button-main-question-3');
+var ans_to_main_question_3 = document.getElementById('answer-to-main-question-3');
+var answer_3 = document.getElementById('answer-3');
+
 btn_question_1_1.addEventListener("click", function(){
   if (ans_question_1_1.value == 'Мексика') {
     alert('Молодец! Твое слово - "Custodios" запомни его (еще лучше запиши)');
@@ -57,7 +63,7 @@ btn_main_question_1.addEventListener("click", function(){
 
 btn_question_2_1.addEventListener("click", function(){
     if (ans_question_2_1.value == 'Гай Юлий Цезарь') {
-      alert('Молодец! Есть одноименный метод шифрования. Он слишком прост, поэтому будем использовать созданный на его основе шифр Виженера.');
+      alert('Молодец! Есть одноименный метод шифрования. Он слишком прост, поэтому будем использовать созданный на его основе шифр Виженера. Запомни это название.');
       question_2_2.style.display = 'block';
     }
     else{
@@ -76,11 +82,22 @@ btn_question_2_1.addEventListener("click", function(){
 })
 
 btn_main_question_2.addEventListener("click", function(){
-    if (ans_to_main_question_2.value == 'Нунчаки') {
+    if (ans_to_main_question_2.value == 'нунчаки') {
       alert('Мои поздравления! Ты уже почти победил). Получи шифр....');
       answer_2.style.display = 'block';
+      task_3.style.display = 'block';
     }
     else{
       alert('пока не правильно.. хнык.. кря..')
     }
+})
+
+btn_main_question_3.addEventListener("click", function(){
+  if (ans_to_main_question_3.value == 'Атлантис') {
+    alert('Урррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррра! Победа!');
+    answer_3.style.display = 'block';
+  }
+  else{
+    alert('пока не правильно.. хнык.. кря..')
+  }
 })
